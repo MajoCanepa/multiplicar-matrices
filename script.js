@@ -43,16 +43,6 @@ function multiplicarMatrices(){
     let columnas1 = parseInt(document.getElementById("columnas").value);
     let columnas2 = parseInt(document.getElementById("columnas2").value);
     
-    if (isNaN(filas1) || isNaN(columnas1) || isNaN(columnas2) || filas1 <= 0 || columnas1 <= 0 || columnas2 <= 0) {
-        alert("Ingrese valores numéricos válidos mayores que cero para las filas y columnas.");
-        return;
-    }
-
-    if (!validarMatriz("matriz1", filas1, columnas1) || !validarMatriz("matriz2", columnas1, columnas2)) {
-        alert("Ingrese valores numéricos válidos en las matrices.");
-        return;
-    }
-
     let matriz1 = obtenerMatriz("matriz1", filas1, columnas1);
     let matriz2 = obtenerMatriz("matriz2", columnas1, columnas2);
 
